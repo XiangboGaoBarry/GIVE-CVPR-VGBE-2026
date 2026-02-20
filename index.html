@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text-conditioned Video Editing Challenge @ CVPR VGBE 2026</title>
+  <meta name="description"
+    content="Text-conditioned General Video Editing Challenge at the 1st Workshop on Video Generative Models: Benchmarks and Evaluation (VGBE) at CVPR 2026. Organized by Abaka AI and Texas A&M University." />
+  <link rel="icon" href="icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- KaTeX for math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});"></script>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ========== HERO / TITLE ========== -->
+  <header class="hero">
+    <div class="hero-bg-anim"></div>
+    <div class="hero-content">
+      <img src="icon.png" alt="Challenge Icon" class="hero-icon" />
+      <div class="hero-text">
+        <h1>Text-conditioned Video Editing Challenge</h1>
+        <a href="https://vidgen-bench-eval.github.io/" target="_blank" rel="noopener noreferrer" class="hero-sub">@ CVPR
+          VGBE 2026</a>
+      </div>
+    </div>
+    <div class="hero-badges">
+      <a href="https://www.codabench.org/competitions/14065/" target="_blank" rel="noopener noreferrer"
+        class="badge"><span class="badge-dot"></span>Submissions Open</a>
+      <a href="#dates" class="badge">📅 Deadline: March 25, 2026</a>
+      <a href="#awards" class="badge">🏆 $1,000 Prize Pool</a>
+    </div>
+  </header>
+
+  <!-- ========== VIDEO SHOWCASE ========== -->
+  <section class="video-showcase">
+    <div class="container">
+      <div class="video-grid">
+        <div class="video-card offset-right">
+          <h3 class="video-title">Background Change</h3>
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="Background Change.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="video-card offset-left">
+          <h3 class="video-title">Color Change</h3>
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="Color Change.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="video-card offset-right">
+          <h3 class="video-title">Count Change</h3>
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="Count Change.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="video-card offset-left">
+          <h3 class="video-title">Environmental Change</h3>
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="Environmental Change.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="video-card offset-right">
+          <h3 class="video-title">Instance Insertion</h3>
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="Instance Insertion.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="video-card offset-left">
+          <h3 class="video-title">Style Change</h3>
+          <div class="video-wrapper">
+            <video autoplay muted loop playsinline>
+              <source src="Style Change.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main-content">
+    <div class="container">
+
+      <h2 class="section-title" id="overview">Text-conditioned General Video Editing</h2>
+
+      <div class="content-block intro-block">
+        <p>This challenge is jointly organized by <strong>Abaka AI</strong> and <strong>Texas A&amp;M
+            University</strong>.</p>
+        <p class="prize-note">Prizes are sponsored by Abaka AI. Special thanks to Abaka AI.</p>
+      </div>
+
+      <!-- Important Dates -->
+      <h3 class="subsection-title" id="dates">📅 Important Dates</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2026.02.20</span>
+          <span class="timeline-desc">Release of Validation Data (Video + editing prompt); validation submission
+            opens.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2026.03.25</span>
+          <span class="timeline-desc">Submission deadline.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2026.04.03</span>
+          <span class="timeline-desc">Technical report deadline for eligibility for the innovation award.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2026.04.06</span>
+          <span class="timeline-desc">Competition results released to participants.</span>
+        </div>
+      </div>
+
+      <!-- Challenge Overview -->
+      <h3 class="subsection-title" id="challenge-overview">🔍 Challenge Overview</h3>
+      <div class="content-block">
+        <p>The <a href="https://vidgen-bench-eval.github.io/" target="_blank" rel="noopener noreferrer"><strong>1st
+              Workshop on Video Generative Models: Benchmarks and Evaluation (VGBE)</strong></a> will be held in June
+          2026 in conjunction with <strong>CVPR 2026</strong>.</p>
+        <p>Recent advances in video generative models, such as Sora, Veo, and Wan, have demonstrated an unprecedented
+          ability to generate high-fidelity, visually stunning content from simple text prompts. As these models move
+          from pure generation toward practical creative workflows, the focus is shifting to video editing. This
+          transition is crucial because real-world applications—ranging from <strong>film production</strong> to
+          robotics simulation—require granular control and creative iteration. Editing allows for the refinement of
+          specific elements, like swapping a character's outfit or changing the weather.</p>
+        <p>However, precise video editing remains a significant challenge due to the strict requirements of
+          <strong>video quality</strong>, <strong>temporal consistency</strong> and <strong>exclusivity of
+            edit</strong>. Unlike static image editing, a video edit must remain perfectly stable across time to avoid
+          "flickering" or "drifting" pixels. Furthermore, ensuring a model modifies only the intended content—such as
+          changing a car's color without altering the background or lighting—requires a deep semantic understanding of
+          3D geometry and physical interactions. Achieving this level of robust, instruction-driven control while
+          maintaining visual realism is very challenging.
+        </p>
+        <p>Hosting this challenge accelerates the development of video models that can move beyond simple generation
+          toward precise, instruction-based controllability. It provides a standardized benchmark to evaluate how
+          effectively these systems can maintain temporal consistency and spatial exclusivity in diverse, real-world
+          editing scenarios.</p>
+        <blockquote>
+          <p><em>The top ranked participants will be awarded and invited to describe their solution to the associated
+              VGBE workshop at CVPR 2026.<br />
+              The results of the challenge will be published at VGBE 2026 workshop (CVPR Proceedings).</em></p>
+        </blockquote>
+      </div>
+
+      <!-- Task Definition -->
+      <h3 class="subsection-title" id="task">📋 Task Definition</h3>
+      <div class="content-block">
+        <p><strong>Task:</strong> Text-conditioned General Video Editing</p>
+        <p>Given an <strong>Original Image</strong> and an <strong>Editing Text Prompt</strong> the model must generate
+          a video that:</p>
+        <ul class="criteria-list">
+          <li><strong>Instruction Following:</strong> Does the edited video accurately reflect the semantic intent of
+            the instruction?</li>
+          <li><strong>Rendering Quality:</strong> Is the edited video temporally consistent and visually realistic?</li>
+          <li><strong>Exclusivity of Edit:</strong> Has the model modified only the intended content without introducing
+            unnecessary changes?</li>
+        </ul>
+
+        <h4>Output Specifications</h4>
+        <p>To ensure fairness and standardized evaluation, all submissions must adhere to the following technical
+          constraints:</p>
+        <ul>
+          <li><strong>Frame:</strong> The generated video sequence must have strictly the same number of frames as the
+            original video.</li>
+          <li><strong>Resolution:</strong>
+            <ul>
+              <li><strong>Minimum:</strong> <strong>480p</strong> (e.g., $854 \times 480$).</li>
+              <li><strong>Recommended:</strong> <strong>720p</strong> (e.g., $1280 \times 720$) or higher for optimal
+                evaluation of fine-grained details.</li>
+            </ul>
+          </li>
+          <li><strong>Aspect Ratio:</strong> The output video must <strong>preserve</strong> the aspect ratio of the
+            input video. <strong>Cropping or distorting</strong> the input aspect ratio will result in great score
+            deduction.</li>
+        </ul>
+
+        <h4>Recommended Baselines / Architectures</h4>
+        <p>We encourage participants to explore or build upon recent efficient architectures, such as:</p>
+        <ol>
+          <li><a href="https://arxiv.org/abs/2602.08277" target="_blank" rel="noopener noreferrer"
+              class="paper-link"><strong>PISCO</strong>: Precise Video Instance Insertion with Sparse Control <span
+                class="link-icon">↗</span></a></li>
+          <li><a href="https://arxiv.org/abs/2503.07598" target="_blank" rel="noopener noreferrer"
+              class="paper-link"><strong>VACE</strong>: All-in-One Video Creation and Editing <span
+                class="link-icon">↗</span></a></li>
+        </ol>
+      </div>
+
+      <!-- Evaluation -->
+      <h3 class="subsection-title" id="evaluation">📊 Evaluation</h3>
+      <div class="content-block">
+        <p>The evaluation process consists of two primary components to ensure both technical excellence and practical
+          utility:</p>
+        <ol>
+          <li><strong>Automated Evaluation (VBench):</strong> We utilize <strong>VBench</strong> to provide an objective
+            assessment of video quality, focusing on technical metrics and perceptual fidelity.</li>
+          <li><strong>Human Evaluation:</strong> Following the <strong>April 20</strong> submission deadline, a panel of
+            experts will score each entry across three key dimensions:
+            <ul>
+              <li><strong>Instruction Following:</strong> Does the edited video accurately reflect the semantic intent
+                of the text prompt?</li>
+              <li><strong>Rendering Quality:</strong> Is the video temporally consistent and visually realistic?</li>
+              <li><strong>Exclusivity of Edit:</strong> Did the model modify <em>only</em> the intended content without
+                introducing artifacts or unnecessary changes?</li>
+            </ul>
+          </li>
+        </ol>
+        <blockquote>
+          <p><strong>Human Evaluation Score:</strong> Calculated as the average of the three dimensions above. Detailed
+            scoring rubrics will be released at a later date.</p>
+        </blockquote>
+
+        <h4>Final Score Calculation</h4>
+        <p>To balance objective performance with human-centric quality, the final ranking is determined by:</p>
+        <div class="formula">
+          $$\text{Final Score} = 0.2 \times \text{VBench Score} + 0.8 \times \text{Human Evaluation Score}$$
+        </div>
+      </div>
+
+      <!-- Awards -->
+      <h3 class="subsection-title" id="awards">🏆 Awards</h3>
+      <div class="content-block awards-block">
+        <p>We have established a total prize pool of <strong>$1,000 USD</strong>. The tentative distribution is as
+          follows:</p>
+        <div class="awards-grid">
+          <div class="award-card champion">
+            <div class="award-icon">🏆</div>
+            <h4>Highest Score Award (Champion)</h4>
+            <p class="award-prize">$500 USD</p>
+            <p class="award-extra">+ Award Certificate</p>
+          </div>
+          <div class="award-card innovation">
+            <div class="award-icon">🌟</div>
+            <h4>Innovation Award</h4>
+            <p class="award-prize">$500 USD</p>
+            <p class="award-extra">+ Award Certificate</p>
+            <p class="award-note">This award recognizes technically novel, methodologically inspiring, or practically
+              impactful contributions. A technical report is required to be eligible.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <h3 class="subsection-title" id="contact">📧 Issues &amp; Contact</h3>
+      <div class="content-block">
+        <ul>
+          <li><strong>Technical Discussions:</strong> Please utilize the community forum on the official challenge page.
+          </li>
+          <li><strong>Inquiries:</strong> For specific questions, contact the organizing committee at <a
+              href="mailto:tcve-cvpr-2026@googlegroups.com">tcve-cvpr-2026@googlegroups.com</a>.</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Text-conditioned Video Editing Challenge @ CVPR VGBE 2026</p>
+      <p class="footer-sub">Organized by Abaka AI &amp; Texas A&amp;M University</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
